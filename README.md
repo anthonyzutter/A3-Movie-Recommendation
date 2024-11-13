@@ -5,8 +5,9 @@ O objetivo deste projeto é desenvolver um sistema de recomendação de filmes q
 
 2. Análise dos Dados
 O dataset utilizado é o "TMDB Movies Dataset" da Kaggle, contendo diversas informações sobre filmes, como título, pontuação de avaliação, duração, gênero, popularidade, entre outros. Para simplificar e focar nos aspectos mais relevantes, removemos colunas irrelevantes como id, backdrop_path, imdb_id, poster_path, entre outras. A coluna vote_average foi escolhida como o rótulo alvo para a recomendação. Foi realizada a limpeza dos dados para tratar valores nulos e formatar colunas categóricas.
+Baixar dataset atualizado: https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies/data
 
-3. Pré-processamento dos Dados
+4. Pré-processamento dos Dados
 O pré-processamento do dataset incluiu as seguintes etapas:
 
 Remoção de Colunas Desnecessárias: Colunas irrelevantes para a tarefa de recomendação (como título, id, status, etc.) foram removidas.
