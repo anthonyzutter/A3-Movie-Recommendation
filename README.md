@@ -28,14 +28,43 @@ Precisão: 0.5503105590062112
 Recall: 0.39659803043867503
 F1-Score: 0.46097814776274715
 
-![Imagem Resultado](resultados.png)
+![Imagem Resultado](resultados_random_forest.png)
 
 
 A matriz de confusão mostrou que o modelo tem um bom desempenho, mas com uma certa quantidade de erros, especialmente em filmes com avaliações extremas (muito altas ou muito baixas).
-![Imagem Matriz](matriz.png)
+![Imagem Matriz](matriz_arvore_decisao.png)
 
 
 6. Análise dos Resultados
 Pontos Fortes: O modelo de Random Forest apresentou uma boa acurácia (70%) e precisão na previsão de filmes com avaliação média mais alta (0). A precisão para a classe 0 (filmes com avaliação alta) foi particularmente boa (75%). A média ponderada de F1-Score também foi razoável (0.69), refletindo um equilíbrio entre precisão e recall.
 
 Pontos Fracos: A principal limitação do modelo é o desempenho mais fraco para filmes com avaliações mais baixas (classe 1). A precisão para a classe 1 foi de 55%, mas o recall foi bem mais baixo (40%). Isso indica que o modelo tem dificuldades em identificar corretamente filmes com avaliações baixas. O F1-Score para a classe 1 ficou em 0.46, refletindo um desempenho abaixo do esperado.
+
+# Melhorias
+
+Foi implementado a Árvore de Decisão para comparação e testes do melhor resultado
+
+Accuracy: 0.6492430734075978
+Precision: 0.44931506849315067
+Recall: 0.4404655326768129
+F1 Score: 0.4448462929475588
+
+Com esses resultados podemos concluir que o Random Forest se mostrou superior a Árvore de Decisão, com a maioria das métricas  um pouco acima tirando o Recall.
+![Imagem Matriz](matriz_arvore_decisao.png)
+
+
+## Pré-requisitos
+
+Certifique-se de ter o Python 3 e o `pip` instalados em seu sistema.
+
+## Instalação
+
+1. Clone este repositório:
+```git clone https://github.com/anthonyzutter/A3-Movie-Recommendation.git```
+```cd A3-Movie-Recommendation```
+
+2. Instale as dependências:
+```pip install -r requirements.txt```
+
+3. Execução
+```python index.py```
