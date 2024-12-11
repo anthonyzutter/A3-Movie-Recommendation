@@ -32,7 +32,7 @@ F1-Score: 0.46097814776274715
 
 
 A matriz de confusão mostrou que o modelo tem um bom desempenho, mas com uma certa quantidade de erros, especialmente em filmes com avaliações extremas (muito altas ou muito baixas).
-![Imagem Matriz](matriz_arvore_decisao.png)
+![Imagem Matriz](matriz_random_forest.png)
 
 
 6. Análise dos Resultados
